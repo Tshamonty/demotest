@@ -20,9 +20,7 @@ test("login and go to dashboard", async ({ page }) => {
     // Step 6: Wait for dashboard to load
     await page.waitForLoadState("networkidle");
 
-    // Step 7: Print current URL
-    const url = await page.url();
-    console.log("CURRENT URL IS: " + url);
+  
 
     // Step 8: Verify dashboard URL
     await expect(page).toHaveURL(/dashboard/i);
