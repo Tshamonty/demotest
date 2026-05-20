@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 test("login and go to dashboard", async ({ page }) => {
 
     // Step 1: Open login page
-    await page.goto("https://rcmbeta.datavanced.com/login", { timeout: 80000 });
+    await page.goto("https://rcmbeta.datavanced.com/login", { timeout: 90000 });
 
     // Step 2: Wait for page to load
     await page.waitForLoadState("networkidle");
